@@ -1,1 +1,1 @@
-# getson-nano
+# getson-nano(DLI basic course)
