@@ -27,21 +27,26 @@
 2. #ls -- 디렉토리 안에 어떤 것이 있는지 살펴봐
 3. #mkdir -p ~/nvdli-data -- "nvdli-data"라는 dir(디렉토리)생성 해
 4. #echo "sudo docker run --runtime nvidia -it --rm --network host \
-    --volume ~/nvdli-data:/nvdli-nano/data \
-    --volume /tmp/argus_socket:/tmp/argus_socket \
+    --volume ~/nvdli-data:/nvdli-nano/data \                       #중요..기존에 만들었던 'nvdli-data'디렉토리와 '/nvdli-nano/data'디렉토리를 묶어 저장공간 공유
+    --volume /tmp/argus_socket:/tmp/argus_socket \                  #usb카메라를 사용할 시 추가          
     --device /dev/video0 \
     nvcr.io/nvidia/dli/dli-nano-ai:v2.0.2-r32.7.1" > -- 도커 다운로드 해
-5. #docker_dli_run.sh -- 도커 실행해
-*도커란? 컨테이너 기술을 자동화해 쉽게 사용할 수 있게 하는 오픈소스 프로젝트다
-
-
-
-
-
-
-
-
-
+5. #chmod +x docker_dli_run.sh
+6. #docker_dli_run.sh -- 도커 실행해
+ =>allow 10 sec for JupyterLab to start @ http://192.168.0.204:8888 (password dlinano)c932e62bbab: Waiting
+JupterLab logging location:  /var/log/jupyter.log  (inside the container
+7. 주소 복사 후 해당 주소로 들어가기
+* 도커란? 컨테이너 기술을 자동화해 쉽게 사용할 수 있게 하는 오픈소스 프로젝트다.......터미널에서 ddocker는 docker저장소를 구축/실행/푸쉬하기 위한 명령어
+* 디렉토리란? 컴퓨팅에서 파일을 분류하기 위해 사용하는 이름공간이다
+-------------------------------------------------------------------------------------------------------------------------------------
+- STEP 5. classification
+1. classification 두 번 클릭
+2. 명령문 실행               ......주의점: CSI 카메라와 USB 카메라 중 선택한 카메라로 실행
+-------------------------------------------------------------------------------------------------------------------------------------
+- STEP 6. regression
+1. regression 두 번 클릭
+2. 명령문 실행               ......주의점: CSI 카메라와 USB 카메라 중 선택한 카메라로 실행
+-------------------------------------------------------------------------------------------------------------------------------------
 ## 기본지식
 
 ## classification
