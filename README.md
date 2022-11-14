@@ -7,13 +7,29 @@
 3. 컴퓨터를 HDMI 화면으로 바꿔준 뒤, 설정한다.
 - STEP2. pip 및 jtop 설치
 * 'sudo'는 리눅스에서 자주 사용되는 명령어로 **Super User Do의 줄임말**
-1. 터미널에 #sudo apt-get upgrade 
-2. 터미널에 #sudo apt-get update
+1. 터미널에 #sudo apt-get upgrade  -- 업그레이드 해
+2. 터미널에 #sudo apt-get update -- 업데이트 해
+3. 터미널에 #sudo apt install python3-pip -- pip(Python에서 작성된 소프트웨어 패키지의 설치 및 관리를 단순화하는 패키지 관리 시스템)설치해
+4. 터미널에 #sudo pip3 list -- 설치 되었는지 확인해
+5. 
 - STEP3. 카메라와 냉각팬 연결
-3. 카메라 연결 (CSI와 USB카메라 특징 CSI:빠름,안정적,용량 큼, USB:느림,호환성,용량이 작음)
-4. 냉긱팬 연결 
-5. 냉각팬 작동...터미널에 #sudo sh -c 'echo 128 > /sys/devices/pwm-fan/target_pwm'
-6. 상태 확인.....터미널에 #jtop
+6. 카메라 연결 (CSI와 USB카메라 특징 CSI:빠름,안정적,용량 큼, USB:느림,호환성,용량이 작음)
+7. 냉긱팬 연결 
+8. 냉각팬 작동...터미널에 #sudo sh -c 'echo 128 > /sys/devices/pwm-fan/target_pwm'
+9. 상태 확인.....터미널에 #jtop
+- STEP 4. 주피터랩 연결
+1. 젯슨 터미널에 #ssh <name>@192.168.55.1 -- 젯슨 나노에 접속
+  =>dli@192.168.55.1's password: 패스워드 입력
+  => 젯슨 나노에 연결됨
+2. #ls -- 디렉토리 안에 어떤 것이 있는지 살펴봐
+3. #mkdir -p ~/nvdli-data -- "nvdli-data"라는 dir(디렉토리)생성 해
+4. #echo "sudo docker run --runtime nvidia -it --rm --network host \
+    --volume ~/nvdli-data:/nvdli-nano/data \
+    --volume /tmp/argus_socket:/tmp/argus_socket \
+    --device /dev/video0 \
+    nvcr.io/nvidia/dli/dli-nano-ai:v2.0.2-r32.7.1" > -- 도커 다운로드 해
+5. #docker_dli_run.sh -- 도커 실행해
+
 
 
 
