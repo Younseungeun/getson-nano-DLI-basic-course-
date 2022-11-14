@@ -53,14 +53,23 @@ JupterLab logging location:  /var/log/jupyter.log  (inside the container
 주의점....카메라 설정
 ![image](https://user-images.githubusercontent.com/102523600/201664762-b402fd8e-771c-406f-a55e-ac2b132cb3e3.png)
 트레이닝
- ![image](https://user-images.githubusercontent.com/102523600/201665589-c4a7f40f-85a0-4e22-b31b-87293874f2b3.png)
-
+ ![image](https://user-images.githubusercontent.com/102523600/201667821-5a1ee9df-8040-4cdf-90db-2e8a719c1e13.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------
 - STEP 6. regression
 1. regression 두 번 클릭
 2. 명령문 실행               ......주의점: CSI 카메라와 USB 카메라 중 선택한 카메라로 실행
 3. 트레이닝
+  
+![image](https://user-images.githubusercontent.com/102523600/201667002-cee555c8-f22c-43a5-9936-aa93e8fbaa8a.png)
+![image](https://user-images.githubusercontent.com/102523600/201666958-bac3826c-440e-4f75-9630-339d1af57e57.png)
+실행
+![image](https://user-images.githubusercontent.com/102523600/201667165-e0c03e25-d029-495b-9936-bdef5c31f461.png)
+주의점....카메라 설정
+![image](https://user-images.githubusercontent.com/102523600/201667273-f940777a-80f8-4f42-a507-255f91d2b63d.png)
+트레이닝
+![image](https://user-images.githubusercontent.com/102523600/201667578-6b67539d-7dc5-4ddd-b36a-9670ae869f2e.png)
+  
 -------------------------------------------------------------------------------------------------------------------------------------
 ## 기본지식
 
@@ -87,7 +96,12 @@ JupterLab logging location:  /var/log/jupyter.log  (inside the container
 - 이미지 입력을 이산적인(discrete) 출력 값(클래스)에 매핑하는 classification과 달리 regression은 이미지 인풋 픽셀을 연속적인(continuous) 출력값에 매핑합니다.
   =>좌표를 생각하면 
 ### process
-
+1. 데이터 수집
+2. 모델 훈련하기-Adam 사용
+3. 테스트(라이브 데모)하기
+4. 오류 발생 시 1~3과정 반복
+5. 모델 저장하기
+----------------------------------------------------------------------------------------------------
 ## Transfer Learning
 : 이미 1000개 이상의 class가 학습되어 있기 때문에 새로운 데이터 세트에 대해서만 훈련하면 됩니다.
 -------------------------------------------------------------------------------------------------
