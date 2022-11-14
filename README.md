@@ -47,6 +47,10 @@ JupterLab logging location:  /var/log/jupyter.log  (inside the container
 2. 명령문 실행               ......주의점: CSI 카메라와 USB 카메라 중 선택한 카메라로 실행
 ![image](https://user-images.githubusercontent.com/102523600/201664384-08cc952c-1d5d-463c-bf4e-c9011defcb38.png)
 ![image](https://user-images.githubusercontent.com/102523600/201664497-b1e90fe8-7de6-4e62-aab8-d9024bd82e84.png)
+실행
+![image](https://user-images.githubusercontent.com/102523600/201664951-e0f145e6-1f3c-45d9-ae6f-2420e5c82571.png)
+주의점....카메라 설정
+![image](https://user-images.githubusercontent.com/102523600/201664762-b402fd8e-771c-406f-a55e-ac2b132cb3e3.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------
 - STEP 6. regression
