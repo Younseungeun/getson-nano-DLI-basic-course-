@@ -1,4 +1,4 @@
-# getson-nano(DLI basic course)
+##기본지식
 
 ## classification
 ### what was used
@@ -24,3 +24,4 @@
 ## Transfer Learning
 : 이미 1000개 이상의 class가 학습되어 있기 때문에 새로운 데이터 세트에 대해서만 훈련하면 됩니다.
 -------------------------------------------------------------------------------------------------
+# getson-nano(DLI basic course)
