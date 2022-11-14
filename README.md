@@ -60,6 +60,7 @@ JupterLab logging location:  /var/log/jupyter.log  (inside the container
 - STEP 6. regression
 1. regression 두 번 클릭
 2. 명령문 실행               ......주의점: CSI 카메라와 USB 카메라 중 선택한 카메라로 실행
+3. 트레이닝
 -------------------------------------------------------------------------------------------------------------------------------------
 ## 기본지식
 
@@ -71,6 +72,7 @@ JupterLab logging location:  /var/log/jupyter.log  (inside the container
 2. 모델 훈련하기-Adam 사용
 3. 테스트(라이브 데모)하기
 4. 오류 발생 시 1~3과정 반복
+5. 모델 저장하기
 ### characteristic
 - 몇 개의 입력을 이산 출력 값에 매핑합니다.
 - 주어진 분류 집합에 대해 입력을 분류합니다.
@@ -80,8 +82,10 @@ JupterLab logging location:  /var/log/jupyter.log  (inside the container
 - 모델이 색 변화를 학습할 수 있도록 조명 설정을 변경합니다.
 - 레이블 오류가 최소한으로 적은 데이터를 수집하여 데이터에 아웃라이어 또는 노이즈를 줄일 수 있도록 한다.
 - 올바른 범주의 데이터응 데이터를 데이터 세트 그룹에 추가하여 모델을 시험합니다.
-
+----------------------------------------------------------------------------------------------------------------------------------------
 ## regression
+- 이미지 입력을 이산적인(discrete) 출력 값(클래스)에 매핑하는 classification과 달리 regression은 이미지 인풋 픽셀을 연속적인(continuous) 출력값에 매핑합니다.
+  =>좌표를 생각하면 
 ### process
 
 ## Transfer Learning
