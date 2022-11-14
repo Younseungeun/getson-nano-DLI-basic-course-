@@ -19,6 +19,7 @@
 2. 냉긱팬 연결 
 3. 냉각팬 작동...터미널에 #sudo sh -c 'echo 128 > /sys/devices/pwm-fan/target_pwm'
 4. 상태 확인.....터미널에 #jtop
+
 ![image](https://user-images.githubusercontent.com/102523600/201663630-1abf44ff-c5dc-430d-af76-b5cb0165e27b.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -44,6 +45,9 @@ JupterLab logging location:  /var/log/jupyter.log  (inside the container
 - STEP 5. classification
 1. classification 두 번 클릭
 2. 명령문 실행               ......주의점: CSI 카메라와 USB 카메라 중 선택한 카메라로 실행
+![image](https://user-images.githubusercontent.com/102523600/201664384-08cc952c-1d5d-463c-bf4e-c9011defcb38.png)
+![image](https://user-images.githubusercontent.com/102523600/201664497-b1e90fe8-7de6-4e62-aab8-d9024bd82e84.png)
+
 -------------------------------------------------------------------------------------------------------------------------------------
 - STEP 6. regression
 1. regression 두 번 클릭
