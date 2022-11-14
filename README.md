@@ -5,8 +5,15 @@
 1. 젯슨 나노를 연결 준비한다.(SD카드 삽입,마우스,키보드,와이파이,파워 연결)
 2. HDMI선을 통해 젯슨 나노와 컴퓨터를 연결한다.
 3. 컴퓨터를 HDMI 화면으로 바꿔준 뒤, 설정한다.
-- STEP 2. 카메라와 냉각팬 연결
-1. 카메라에는 크게 두 가지 종류가 있다. CSI와 USB카메라이다.(특징 CSI:빠름,안정적,용량 큼, USB:느림,호환성,용량이 작음)
+- STEP2. pip 및 jtop 설치
+* 'sudo'는 리눅스에서 자주 사용되는 명령어로 **Super User Do의 줄임말**
+1. 터미널에 #sudo apt-get upgrade 
+2. 터미널에 #sudo apt-get update
+- STEP3. 카메라와 냉각팬 연결
+3. 카메라 연결 (CSI와 USB카메라 특징 CSI:빠름,안정적,용량 큼, USB:느림,호환성,용량이 작음)
+4. 냉긱팬 연결 
+5. 냉각팬 작동...터미널에 #sudo sh -c 'echo 128 > /sys/devices/pwm-fan/target_pwm'
+6. 상태 확인.....터미널에 #jtop
 
 
 
